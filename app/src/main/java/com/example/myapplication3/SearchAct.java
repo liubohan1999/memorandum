@@ -39,9 +39,9 @@ public class SearchAct extends AppCompatActivity implements View.OnClickListener
         SimpleAdapter adapter;
 
 
-        adapter = new SimpleAdapter(this, items, R.layout.port_list_view_item, new String[]{
+        adapter = new SimpleAdapter(this, items, R.layout.search_list_item, new String[]{
                 NotesDB.CONTENT,
-                NotesDB.TIME}, new int[]{R.id.tv_fm_words_details_word, R.id.tv_fm_words_details_meaning});
+                NotesDB.TIME}, new int[]{R.id.Content_details, R.id.Time_details});
 
 
         ls.setAdapter(adapter);

@@ -4,12 +4,12 @@
     android:padding="10dp"
     android:layout_height="match_parent">
     <TextView
-        android:id="@+id/tv_fm_words_details_word"
+        android:id="@+id/Content_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"/>
     <TextView
-        android:id="@+id/tv_fm_words_details_meaning"
+        android:id="@+id/Time_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
