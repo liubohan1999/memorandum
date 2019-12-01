@@ -25,7 +25,7 @@ public class SelectAct extends Activity  implements View.OnClickListener {
         s_delete=(Button)findViewById(R.id.s_delete);
         s_save=(Button)findViewById(R.id.s_save);
         s_tv=(EditText)findViewById(R.id.s_tv);
-        notesDB =new NotesDB(this);
+        notesDB =new NotesDB(this,"notes",null,1);
         dbwriter=notesDB.getWritableDatabase();
         s_delete.setOnClickListener(this);
         s_save.setOnClickListener(this);

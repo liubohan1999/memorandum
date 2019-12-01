@@ -29,7 +29,7 @@ public class AddContent extends Activity implements View.OnClickListener {
         ettext=(EditText) findViewById(R.id.ettext);
         savebtn.setOnClickListener(this);
         deletebtn.setOnClickListener(this);
-        notesDB=new NotesDB(this);
+        notesDB=new NotesDB(this,"notes",null,1);
         dbWriter=notesDB.getWritableDatabase();
     }
 

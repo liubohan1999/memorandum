@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         help =(Button) findViewById(R.id.help);
         search=(Button)findViewById(R.id.search) ;
         textbtn.setOnClickListener(this);
-        notesDB=new NotesDB(this);
+        //notesDB=new NotesDB(this);
+        notesDB=new NotesDB(this,"notes",null,1);
         search.setOnClickListener(this);
         help.setOnClickListener(this);
         dbReader=notesDB.getReadableDatabase();

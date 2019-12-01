@@ -27,7 +27,7 @@ public class SearchAct extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-        notesDB = new NotesDB(this);
+        notesDB = new NotesDB(this,"notes",null,1);
         dbReader = notesDB.getReadableDatabase();
         btn_search = findViewById(R.id.searchbtn);
         edtsearch = findViewById(R.id.search_et);
